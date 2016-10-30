@@ -1,0 +1,18 @@
+<mj-section vertical-align="middle" background-color="#ffffff" padding="30px 50px">
+  <mj-column vertical-align="top" width="40%">
+    <mj-image src="{{this.image}}" alt="" padding="0px 0px 25px 0px" width="235px">
+    </mj-image>
+  </mj-column>
+  <mj-column width="10%">&nbsp;</mj-column>
+  <mj-column vertical-align="top" width="50%">
+    <mj-text mj-class="article-title">
+      {{this.title}}
+    </mj-text>
+    <mj-text mj-class="article-excerpt">
+      {{this.intro}}
+    </mj-text>
+    <mj-button mj-class="btn-read-more" href="{{this.link}}">
+      <span style="line-height:20px;">READ MORE&nbsp;&nbsp;&boxbox;</span>
+    </mj-button>
+  </mj-column>
+</mj-section>

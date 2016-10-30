@@ -1,0 +1,29 @@
+{
+  "name": "Chaminade-Email-Newsletter-Template",
+  "version": "1.0.0",
+  "description": "Template for regular Chaminade email communications.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-image-resize": "^0.10.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-mjml": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "jpegtran-bin": "^3.1.0",
+    "json2csv": "^3.7.0",
+    "moment": "^2.15.1",
+    "request-image-size": "^1.2.2",
+    "request-promise": "^4.1.1",
+    "run-sequence": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

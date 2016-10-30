@@ -1,0 +1,64 @@
+{
+  "template": {
+    "constituency": "alumni",
+    "nameplate_image": "",
+    "masthead": ""
+  },
+  "meta": {
+    "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
+    "og_twtr_url": "%%view_email_url%%",
+    "og_type_article_author": "Office of University Communications and Marketing",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "600",
+    "og_image_height": "",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "twtr_card": "summary"
+  },
+  "hero": {
+    "title": "Placeholder Title for Hero Article",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "http://image.S7.exacttarget.com/lib/fe9213727d65047e7d/m/1/c1c22541-054d-45de-9075-f456838fdac2.jpg",
+    "link": "https://www.chaminade.edu/"
+  },
+  "articles": [
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    },
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    },
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    },
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    }
+  ],
+  "events": [
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    },
+    {
+      "title": "Placeholder Title",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
+      "link": "https://www.chaminade.edu/"
+    }
+  ]
+}
