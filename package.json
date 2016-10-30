@@ -1,7 +1,7 @@
 {
-  "name": "Chaminade-Email-Newsletter-Template",
+  "name": "Chaminade-Email-Newsletter-Templates",
   "version": "1.0.0",
-  "description": "Template for regular Chaminade email communications.",
+  "description": "Templates for regular Chaminade email communications.",
   "main": "gulpfile.js",
   "dependencies": {
     "del": "^2.2.2",
@@ -24,6 +24,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Brad Baris",
   "license": "ISC"
 }

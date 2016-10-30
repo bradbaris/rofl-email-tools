@@ -1,8 +1,8 @@
 {
   "template": {
     "constituency": "alumni",
-    "nameplate_image": "",
-    "masthead": ""
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
+    "masthead": "News for Alumni - November 2016 - Vol. 4"
   },
   "meta": {
     "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
@@ -10,7 +10,7 @@
     "og_type_article_author": "Office of University Communications and Marketing",
     "og_image_type": "image/jpeg",
     "og_image_width": "600",
-    "og_image_height": "",
+    "og_image_height": "368",
     "og_locale": "en_US",
     "og_type": "article",
     "twtr_card": "summary"

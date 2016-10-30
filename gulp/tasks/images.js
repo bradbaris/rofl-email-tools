@@ -1,11 +1,11 @@
 'use strict';
 
-const gulp        = require('gulp'),
-      fs          = require('fs'),
-      imageResize = require('gulp-image-resize'),
-      imagemin    = require('gulp-imagemin'),
+const fs          = require('fs'),
+      gulp        = require('gulp'),
+      gutil       = require('gulp-util'),
       rename      = require("gulp-rename"),
-      gutil       = require('gulp-util');
+      imagemin    = require('gulp-imagemin'),
+      imageResize = require('gulp-image-resize');
 
 /**
  * Formats Images
@@ -20,6 +20,17 @@ const gulp        = require('gulp'),
  **/
 
 module.exports = gulp.task('images', function () {
+
+  if(gutil.env.size && typeof gutil.env.size !== 'number') {
+    throw new gutil.PluginError('images', 'The --size param should be a number.');
+  }
+  if(gutil.env.hero) {
+    try {
+      fs.accessSync(config.paths.project+gutil.env.hero);
+    } catch (err) {
+        throw new gutil.PluginError('images', 'File Not Found. The --hero image file could not be found.');
+      }
+  }
 
   var options = { 
       width : gutil.env.size ?  gutil.env.size : gutil.env.hero ? 600 : 235,

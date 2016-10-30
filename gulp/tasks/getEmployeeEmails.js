@@ -27,7 +27,7 @@ const options = {
  **/
 module.exports = gulp.task('getEmails', function () {
   if(!process.env.CUH_EMAIL_ENDPOINT || !process.env.CUH_EMAIL_OAUTH) {
-    throw new gutil.PluginError('Missing API Parameters', 'Need to source the API URI and the OAUTH token.');
+    throw new gutil.PluginError('getEmails', 'Missing API Parameters. Need to source the API URI and the OAUTH token.');
   }
 
   return requestp(options)

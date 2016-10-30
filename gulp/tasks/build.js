@@ -20,7 +20,7 @@ module.exports = gulp.task('pre:build', function() {
 
   // Check for both params (--data and --template)
   if (!gutil.env.data && !gutil.env.template) {
-    throw new gutil.PluginError('Missing Parameters', 'Both --data and --template are required fields. Data refers to the JSON file with email content, and template is the template.');
+    throw new gutil.PluginError('pre:build', 'Missing Parameters. Both --data and --template are required fields. Data refers to the JSON file with email content, and template is the template.');
   }
 
   // Check for required param (--data) and initialize
@@ -28,11 +28,11 @@ module.exports = gulp.task('pre:build', function() {
     try {
       fs.accessSync(config.paths.project+gutil.env.data);
     } catch (err) {
-        throw new gutil.PluginError('File Not Found', 'The --data file could not be found.');
+        throw new gutil.PluginError('pre:build', 'File Not Found. The --data file could not be found.');
       }
     data = require(config.paths.project+gutil.env.data);
   } else {
-    throw new gutil.PluginError('Missing Data Parameter', '--data is a required field, needed to build email from.');
+    throw new gutil.PluginError('pre:build', 'Missing Data Parameter. --data is a required field, needed to build email from.');
   }
 
   // Check for required param (--template) and initialize
@@ -40,20 +40,12 @@ module.exports = gulp.task('pre:build', function() {
     try {
       fs.accessSync(config.paths.project+gutil.env.template);
     } catch (err) {
-        throw new gutil.PluginError('template Not Found', 'The --template file could not be found.');
+        throw new gutil.PluginError('pre:build', 'Template Not Found. The --template file could not be found.');
       }
     template = require(config.paths.project+gutil.env.template);
   } else {
-    throw new gutil.PluginError('Missing template Parameter', '--template is a required field, needed to build email from.');
+    throw new gutil.PluginError('pre:build', 'Missing template Parameter. --template is a required field, needed to build email from.');
   }
-
-  // Generate Masthead copy
-  data.template.masthead = masthead.createMastheadString(data.template.constituency, false);
-  
-  // Check if nameplate_image specified, if not, then blank.
-  if(config.newsletterType[data.template.constituency].headerImg) {
-    data.template.nameplate_image = config.newsletterType[data.template.constituency].headerImg;
-  } else { data.template.nameplate_image = "" }
 
   // Detects hero image for opengraph image height  
   let og_image = new Promise( function(resolve, reject) {
@@ -61,11 +53,21 @@ module.exports = gulp.task('pre:build', function() {
       if (err) { return reject(err) }
       return resolve(dimensions.height.toString());
     });
-  });
-  og_image.then( function(result) {
+  }).then( function(result) {
     data.meta.og_image_height = result;
+
+    // Generate Masthead copy
+    data.template.masthead = masthead.createMastheadString(data.template.constituency, false);
+    
+    // Check if nameplate_image specified, if not, then blank.
+    if(config.newsletterType[data.template.constituency].headerImg) {
+      data.template.nameplate_image = config.newsletterType[data.template.constituency].headerImg;
+    } else { data.template.nameplate_image = "" }
+
     // If good, update JSON file with new values
     fs.writeFileSync(gutil.env.data, JSON.stringify(data, null, '  '));
+  }).catch( function(err) {
+    throw new gutil.PluginError('pre:build', 'Ensure `data.hero.image` is valid. If this fails, build-generated data was not written to the data.json');
   });
 
   // Create final filename for HTML email
