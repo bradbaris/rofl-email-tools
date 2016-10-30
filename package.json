@@ -13,9 +13,11 @@
     "gulp-mjml": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "inquirer": "^1.2.2",
     "jpegtran-bin": "^3.1.0",
     "json2csv": "^3.7.0",
     "moment": "^2.15.1",
+    "nodemailer": "^2.6.4",
     "request-image-size": "^1.2.2",
     "request-promise": "^4.1.1",
     "run-sequence": "^1.2.2"

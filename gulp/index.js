@@ -13,7 +13,10 @@ tasks.forEach(function (task) {
   require('./tasks/' + task);
 });
 
-// Refactor when Gulp 4.0 releases, with gulp.series
+/**
+ * Default Gulp Entry
+ * (Refactor when Gulp 4.0 releases, with `gulp.series`)
+ **/
 gulp.task('default', function(callback) {
   sequence('clean', ['build', 'images'], 'watch', callback);
 });
