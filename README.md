@@ -1,7 +1,7 @@
 # Chaminade Email Newsletter Templates
 [![UCM](https://img.shields.io/badge/Department-UCM-blue.svg)](https://www.chaminade.edu)  
 
-A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails. The templates already come with the necessary AMPscript template strings for Salesforce Marketing Cloud. This was made and tested (although no test suite) to work on Mac OSX.
+A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails. The templates already come with the necessary [AMPscript](https://help.marketingcloud.com/en/documentation/ampscript/ampscript_syntax_guide/) template strings for Salesforce Marketing Cloud. This was made and tested (although no test suite) to work on Mac OSX.
 
 Just have to fill out `src/emailconfig.json` with email content, then select the appropriate template from `/templates` and feed it into gulp as parameters, for example: 
   ```

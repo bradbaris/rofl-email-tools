@@ -5,7 +5,7 @@ const gulp     = require('gulp'),
  
 /**
  * Test Mailer
- * Asks you for Gmail credentials (not saved), destination email, and template, 
+ * Asks you for GMail credentials (not saved), destination email, and template, 
  * then sends out an email via nodemailer.
  **/
 
