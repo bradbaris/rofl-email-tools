@@ -1,6 +1,7 @@
 'use strict'
 
 const gulp     = require('gulp'),
+      path     = require('path'),
       gutil    = require('gulp-util'),
       sequence = require('run-sequence');
 
@@ -16,12 +17,12 @@ module.exports = gulp.task('watch', function() {
   setTimeout(function() {
 
     gulp.watch(config.paths.project + gutil.env.data, function() {
-      requireUncached(config.paths.project + gutil.env.data);
+      requireUncached(path.join(config.paths.project,gutil.env.data));
       sequence('default');
     });
 
     gulp.watch(config.paths.project + gutil.env.template, function() {
-      requireUncached(config.paths.project + gutil.env.template);
+      requireUncached(path.join(config.paths.project,util.env.template));
       sequence('default');
     });  
   }, 2000);

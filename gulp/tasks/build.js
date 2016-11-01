@@ -1,6 +1,7 @@
 'use strict';
 
 const fs           = require('fs'),
+      path         = require('path'),
       gulp         = require('gulp'),
       mjml         = require('gulp-mjml'),
       gutil        = require('gulp-util'),
@@ -26,23 +27,25 @@ module.exports = gulp.task('pre:build', function() {
   // Check for required param (--data) and initialize
   if (gutil.env.data) {
     try {
-      fs.accessSync(config.paths.project+gutil.env.data);
+      // Technically `fs` calls Path module already anyway, but oh well
+      fs.accessSync(path.join(config.paths.project,gutil.env.data));
     } catch (err) {
         throw new gutil.PluginError('pre:build', 'File Not Found. The --data file could not be found.');
       }
-    data = require(config.paths.project+gutil.env.data);
+    data = require(path.join(config.paths.project,gutil.env.data));
   } else {
     throw new gutil.PluginError('pre:build', 'Missing Data Parameter. --data is a required field, needed to build email from.');
   }
 
   // Check for required param (--template) and initialize
   if (gutil.env.template) {
-    try {
-      fs.accessSync(config.paths.project+gutil.env.template);
+    try {      
+      // Technically `fs` calls Path module already anyway, but oh well
+      fs.accessSync(path.join(config.paths.project,gutil.env.template));
     } catch (err) {
         throw new gutil.PluginError('pre:build', 'Template Not Found. The --template file could not be found.');
       }
-    template = require(config.paths.project+gutil.env.template);
+    template = require(path.join(config.paths.project,gutil.env.template));
   } else {
     throw new gutil.PluginError('pre:build', 'Missing template Parameter. --template is a required field, needed to build email from.');
   }
@@ -57,12 +60,14 @@ module.exports = gulp.task('pre:build', function() {
     data.meta.og_image_height = result;
 
     // Generate Masthead copy
-    data.template.masthead = masthead.createMastheadString(data.template.constituency, false);
+    data.template.masthead = masthead.createMastheadString(data.template.constituency, false, data.template.add_to_filename);
     
-    // Check if nameplate_image specified, if not, then blank.
+    // Check if nameplate_image specified, if not, then default to Alumni (Chaminade News).
     if(config.newsletterType[data.template.constituency].headerImg) {
       data.template.nameplate_image = config.newsletterType[data.template.constituency].headerImg;
-    } else { data.template.nameplate_image = "" }
+    } else { 
+      data.template.nameplate_image = config.newsletterType.alumni.headerImg;
+    }
 
     // If good, update JSON file with new values
     fs.writeFileSync(gutil.env.data, JSON.stringify(data, null, '  '));
@@ -71,7 +76,7 @@ module.exports = gulp.task('pre:build', function() {
   });
 
   // Create final filename for HTML email
-  distFilename = masthead.createMastheadString(data.template.constituency, true);
+  distFilename = masthead.createMastheadString(data.template.constituency, true, data.template.add_to_filename);
 
   // Copy a copy into build for archival
   return gulp.src(gutil.env.data)
@@ -90,9 +95,10 @@ module.exports = gulp.task('pre:build', function() {
  **/
 module.exports = gulp.task('build', ['pre:build'], function () {
   return gulp.src(gutil.env.template)
-    .pipe(handlebars(data, {batch:[config.paths.project+'templates/partials']}))
+    .pipe(handlebars(data, {batch:[path.join(config.paths.project,'templates/partials')]}))
     .pipe(mjml())
-    .pipe(inject.after( // INSERT OPENGRAPH META TAGS
+    .pipe(inject.after( // Insert OpenGraph Meta tags for Facebook/Twitter
+                        // Twitter currently doesnt work due to robots.txt issue...
       '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">',
       '<meta property="og:url" content="'+data.meta.og_twtr_url+'" />'+
       '<meta property="og:title" content="'+data.template.masthead+'" />'+
@@ -109,7 +115,10 @@ module.exports = gulp.task('build', ['pre:build'], function () {
       '<meta name="og:twitter:description" content="'+data.meta.og_twtr_desc+'" />'+
       '<meta name="og:twitter:url" content="'+data.meta.og_twtr_url+'" />'+
       '<meta name="og:twitter:image" content="'+data.hero.image+'" />'))
-      // ADD IN SALESFORCE TRACKING SNIPPET
+      // Add Litmus Tracking Snippet
+    .pipe(inject.before('</body>',
+      '<style data-ignore-inlining>@media print{ #_t { background-image: url(\'https://avasvbi8.emltrk.com/avasvbi8?p&d=%%emailaddr%%\');}} div.OutlookMessageHeader {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} table.moz-email-headers-table {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} blockquote #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} #MailContainerBody #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')}</style><div id="_t"></div><img src="https://avasvbi8.emltrk.com/avasvbi8?d=%%emailaddr%%" width="1" height="1" border="0" />'))
+      // Add Salesforce Tracking Snippet
     .pipe(inject.before('</body>','<custom name="opencounter" type="tracking">'))
     .pipe(rename(function (path) {
         path.basename = "FINAL_"+distFilename;

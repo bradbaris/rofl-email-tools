@@ -1,8 +1,9 @@
 {
   "template": {
-    "constituency": "employees",
-    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6d051d52-5ade-460a-8d59-791b5d6cbd15.jpg",
-    "masthead": "News for the Chaminade Ohana - October 2016 - Vol. 6"
+    "constituency": "alumni",
+    "add_to_filename": "hawaii",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
+    "masthead": "News for Alumni - November 2016 - Vol. 4"
   },
   "meta": {
     "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
@@ -41,48 +42,42 @@
       "link": "https://www.chaminade.edu/article/pacific-island-review-celebrates-diversity"
     },
     {
-      "title": "The Office of the Rector Needs Your Help",
-      "intro": "Do you know someone in the Chaminade `ohana who exhibits a continuous commitment to Marianist values? If so, nominate them for the 2017 Heritage Awards.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/2508918f-f518-4a5b-b463-8172b39fcd6c.jpg",
-      "link": "https://www.chaminade.edu/article/office-rector-needs-your-help"
+      "title": "'All Things Marianist' Episodes 1 & 2",
+      "intro": "As a way to highlight Marianists on campus, the Marianist Educational Associate are producing monthly videos to highlight Marianists at different levels.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg",
+      "link": "https://www.chaminade.edu/article/all-things-marianist-video-series-releases-its-first-episode"
     },
     {
-      "title": "'All Things Marianist' Episode 2",
-      "intro": "Chaminade Dean of Humanities and Performing Arts, David Coleman, interviews Chaminade rector emeritus, Bro. Jerome Bommer, SM.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg",
-      "link": "https://youtu.be/yw-6GYf3e_w"
+      "title": "2018 Announcement",
+      "intro": "Our premier early season basketball tournament features the strongest field in history.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg",
+      "link": "https://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history"
     }
   ],
   "events": [
     {
-      "title": "2018 Maui Jim Maui Invitational",
-      "intro": "For the first time in the tournament's history, eight Division I programs take center court.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg",
-      "link": "https://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history"
-    },
-    {
-      "title": "All Souls Mass",
-      "intro": "Gather with the community to remember those who have died and to pray as a community for peace and healing.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/fe844ea7-e0a6-44bb-92be-da9b8eddcfc7.jpg",
-      "link": "https://events.chaminade.edu/event/all_souls_mass"
-    },
-    {
-      "title": "Campus Survey Ends Nov. 4",
-      "intro": "Aramark Dining Services invites you to take its survey so that it can better understand our campus lifestyle and preferences.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4f429da7-addb-44fa-bc81-77ab85444d36.jpg",
-      "link": "http://www.college-survey.com/chaminade"
-    },
-    {
-      "title": "Men's Basketball vs New Zealand Maori Exhibition Game",
-      "intro": "Friday, Nov. 4, at 7:30pm in McCabe Gym",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/8ec86d2e-dabc-4c75-b586-9cf5cc94e486.jpg",
-      "link": "https://events.chaminade.edu/event/mens_basketball_vs_new_zealand_maori_exhibition"
+      "title": "You're Invited",
+      "intro": "Please join the celebration as Clarence T. C. Ching Hall is dedicated.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4b67fd57-4285-446a-9870-20aaed6629e2.jpg",
+      "link": "https://www.chaminade.edu/article/chaminade-university-celebrates-dedication-clarence-t-c-ching-hall"
     },
     {
       "title": "WIT",
       "intro": "Chaminade Performing Arts presents Margaret Edson's Pulitzer prize winning play.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/10b80bc0-d027-4d05-880e-ee20006c2988.jpg",
       "link": "https://events.chaminade.edu/event/wit_2850"
+    },
+    {
+      "title": "Inter-Faith Prayer Service",
+      "intro": "The gathering celebrates people from all faiths and spiritual traditions, giving thanks together. All are welcome. Lunch will be provided.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4903c381-082d-401d-8df7-d87355e3a780.jpg",
+      "link": "https://events.chaminade.edu/event/inter-faith_prayer_service"
+    },
+    {
+      "title": "Christmas Lighting Ceremony",
+      "intro": "What a great way to start the holiday season! All are welcome to the annual lighting of campus.  Meet at Clarence T. C. Ching Hall where the festivities begins.",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4ede006e-6a1d-4572-a169-6cbabf1c0dae.jpg",
+      "link": "https://events.chaminade.edu/event/christmas_lighting_ceremony"
     }
   ]
 }

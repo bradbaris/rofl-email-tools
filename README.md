@@ -1,7 +1,7 @@
 # Chaminade Email Newsletter Templates
 [![UCM](https://img.shields.io/badge/Department-UCM-blue.svg)](https://www.chaminade.edu)  
 
-A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails.
+A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails. This was made and tested (although no test suite) to work on Mac OSX.
 
 Just have to fill out `src/emailconfig.json` with email content, then select the appropriate template from `/templates` and feed it into gulp as parameters, for example: 
   ```
@@ -12,6 +12,9 @@ Just have to fill out `src/emailconfig.json` with email content, then select the
 
 ### Compile Email  
 The `--data` and `--template` parameters are _REQUIRED_.
+
+_Read first: If you change the `template.constituency` in `emailconfig.json`, you should run it twice to ensure all fields properly changed. Also `template.nameplate_image` and `template.masthead` will be overwritten, as `template.constituency` generates it._  
+
   ```
   gulp --data {src/emailconfig.json} --template {templates/templateName.hbs}
   ```
@@ -23,23 +26,27 @@ Hero images default to `600px` wide and can be overridden with `--size`.
   gulp images [--hero src/images/{imagefile.jpg|png} --size ###]
   ```
 
-### Send test email  
-Sends out a test email via Gmail via nodemailer. Asks you for credentials (not saved), destination email, and template.
+### Send test email
+_Read first: Before you do this, you have to upload the images to Salesforce Marketing Cloud and use those CDN URIs for all image assets. The test email also does not fill in the `%%template%%` AMPscript tags. It is merely for layout and copy proofing._  
+
+Sends out a test email via GMail via nodemailer. Asks you for your GMail credentials (not saved), email recipient, and template. Requires an env variable `$TEST_EMAIL_LIST` in the format `"email@address.edu,email@address.edu,[...]"` since Bash can't export arrays as env variables. Optional `$CHAMINADE_EMAIL` and `$CHAMINADE_PW` to autofill email credentials.
   ```
   gulp sendmail
   ```
 
 ### Pull a fresh email list (for Faculty/Staff/Adjuncts)
+Pulls an email list. This relies on a few env variables: `$CUH_EMAIL_ENDPOINT` for the CUH API URI for internal emails, and `$CUH_EMAIL_OAUTH` for the OAUTH token.
   ```
   gulp getEmails
   ```
 
-### What Gulp doesn't do  
-- Does not upload your images into Salesforce MarketingCloud.
-- Does not create your emails in Salesforce MarketingCloud either.
-- After that, you have to copy the HTML email in, write in the email subject, and use the GUI to send emails.
+## What Gulp doesn't do
+- Right now, basically anything to do with Salesforce.
+  - Does not upload your images into Salesforce Marketing Cloud.
+  - Does not create your emails in Salesforce Marketing Cloud either.
+  - One currently has to clone a previous email (faster than from scratch), edit the email's Salesforce filename and the email subject, and use the GUI to send emails, especially for the AMPscript templating and Sender Authentication Package.
 
-### Features currently exploring
-- Salesforce [AMPscript](https://help.marketingcloud.com/en/documentation/ampscript/ampscript_syntax_guide/) logic and integration features. Social Forwarding?
+## Features currently exploring
 - May be possible to connect to Salesforce Marketing Cloud via their [FUEL SDK for Node](https://github.com/salesforce-marketingcloud/FuelSDK-Node) to create and send emails automatically.
-- Uploading and importing email lists to Marketing Cloud automatically [may be possible with Enhanced FTP.](http://www.degdigital.com/insights/exacttarget-training-automate-importing/). What about uploading images?
+- Salesforce [AMPscript](https://help.marketingcloud.com/en/documentation/ampscript/ampscript_syntax_guide/) logic and integration features. Social Forwarding?
+- Uploading and importing email lists to Salesforce Marketing Cloud automatically [may be possible with Enhanced FTP](http://www.degdigital.com/insights/exacttarget-training-automate-importing/). What about uploading images?

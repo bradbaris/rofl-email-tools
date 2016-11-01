@@ -1,6 +1,7 @@
 'use strict';
 
 const fs          = require('fs'),
+      path        = require('path'),
       gulp        = require('gulp'),
       gutil       = require('gulp-util'),
       rename      = require("gulp-rename"),
@@ -39,7 +40,7 @@ module.exports = gulp.task('images', function () {
       imageMagick: true
     }
 
-    return gulp.src(gutil.env.hero ?  gutil.env.hero : config.paths.src.images+'/*.{jpg,png}')
+    return gulp.src(gutil.env.hero ?  gutil.env.hero : path.join(config.paths.src.images,'*.{jpg,png}'))
     .pipe(imageResize(options))
     .pipe(imagemin())
     .pipe(rename(function (path) { path.basename += '_'+options.width+'w' }))

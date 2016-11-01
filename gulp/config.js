@@ -47,6 +47,12 @@ global.config = {
         headline   : "Chaminade Newsletter Headline",
         headerImg  : "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
         originDate : "" // None
+      },
+    blank :
+      {
+        headline   : "", // None
+        originDate : "", // None
+        headerImg  : ""  // None
       }
   }
 };
