@@ -9,6 +9,6 @@ const gulp     = require('gulp'),
  * then sends out an email via nodemailer.
  **/
 
-module.exports = gulp.task('sendmail', function(callback) {
+module.exports = gulp.task('sendTestEmail', function(callback) {
   mailer('/build'), callback
 });

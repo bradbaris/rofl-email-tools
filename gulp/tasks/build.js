@@ -89,8 +89,9 @@ module.exports = gulp.task('pre:build', function() {
 });
 
 /**
- * Compiles Handlebars => MJML => HTML,
- * Inserts raw HTML meta tags (not yet supported in MJML),
+ * Compiles Handlebars => MJML => HTML
+ * Inserts raw HTML meta tags (not yet supported in MJML)
+ * Inserts Litmus email tracking snippet
  * Inserts Salesforce email tracking snippet
  **/
 module.exports = gulp.task('build', ['pre:build'], function () {

@@ -1,7 +1,7 @@
 # Chaminade Email Newsletter Templates
 [![UCM](https://img.shields.io/badge/Department-UCM-blue.svg)](https://www.chaminade.edu)  
 
-A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails. This was made and tested (although no test suite) to work on Mac OSX.
+A little inhouse email templating workflow based on [MJML](https://mjml.io/), [Handlebars](http://handlebarsjs.com/), and [Gulp](http://gulpjs.com/). Uses [Nodemailer](https://nodemailer.com/) for fast test emails. The templates already come with the necessary AMPscript template strings for Salesforce Marketing Cloud. This was made and tested (although no test suite) to work on Mac OSX.
 
 Just have to fill out `src/emailconfig.json` with email content, then select the appropriate template from `/templates` and feed it into gulp as parameters, for example: 
   ```
@@ -31,7 +31,7 @@ _Read first: Before you do this, you have to upload the images to Salesforce Mar
 
 Sends out a test email via GMail via nodemailer. Asks you for your GMail credentials (not saved), email recipient, and template. Requires an env variable `$TEST_EMAIL_LIST` in the format `"email@address.edu,email@address.edu,[...]"` since Bash can't export arrays as env variables. Optional `$CHAMINADE_EMAIL` and `$CHAMINADE_PW` to autofill email credentials.
   ```
-  gulp sendmail
+  gulp sendTestEmail
   ```
 
 ### Pull a fresh email list (for Faculty/Staff/Adjuncts)
@@ -41,10 +41,10 @@ Pulls an email list. This relies on a few env variables: `$CUH_EMAIL_ENDPOINT` f
   ```
 
 ## What Gulp doesn't do
-- Right now, basically anything to do with Salesforce.
+- Right now, basically anything to do with Salesforce. It just builds out the HTML email itself.
   - Does not upload your images into Salesforce Marketing Cloud.
   - Does not create your emails in Salesforce Marketing Cloud either.
-  - One currently has to clone a previous email (faster than from scratch), edit the email's Salesforce filename and the email subject, and use the GUI to send emails, especially for the AMPscript templating and Sender Authentication Package.
+  - One currently has to clone a previous email in Salesforce (faster than from scratch), manually edit the email's Salesforce filename and the email subject, and use the GUI to formally send the email out. We pretty much use Salesforce only for the Sender Authentication Package (and maybe fancy segmenting and dynamic content with AMPscript in the future).
 
 ## Features currently exploring
 - May be possible to connect to Salesforce Marketing Cloud via their [FUEL SDK for Node](https://github.com/salesforce-marketingcloud/FuelSDK-Node) to create and send emails automatically.
