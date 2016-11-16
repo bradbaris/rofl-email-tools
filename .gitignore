@@ -1,6 +1,9 @@
-build/*
 src/images/*
+!src/images/.gitkeep
+build/*
+!build/.gitkeep 
 litmus_tests/*
+!litmus_tests/.gitkeep 
 
 node_modules
 lib/gsheets/client_secret.json
