@@ -1,0 +1,91 @@
+{
+  "template": {
+    "constituency": "employees",
+    "add_to_filename": "",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6d051d52-5ade-460a-8d59-791b5d6cbd15.jpg",
+    "masthead": "News for the Chaminade Ohana - November 2016 - Vol. 7"
+  },
+  "meta": {
+    "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
+    "og_twtr_url": "%%view_email_url%%",
+    "og_type_article_author": "Office of University Communications and Marketing",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "600",
+    "og_image_height": "350",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "twtr_card": "summary"
+  },
+  "content": [
+    {
+      "type": "hero",
+      "title": "Designing with a Purpose",
+      "intro": "Environmental and Interior Design students earn awards for their service-learning designs…",
+      "link": "http://www.chaminade.edu/article/service-learning-designs-brought-accolades-eid-students",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/db0eb651-0a0f-4b30-a6ae-0acd016fa1c4.jpg"
+    },
+    {
+      "type": "article",
+      "title": "A Step Towards the Future",
+      "intro": "The Hogan Entrepreneurs Program teaches veterans valuable job preparation skills.",
+      "link": "https://www.chaminade.edu/article/hogan-entrepreneurs-assist-veterans-job-skills",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/309e8cde-bd6f-4dd6-9549-b262b3b48838.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Nobel Laureate Speaking Today",
+      "intro": "You're invited to Dr. Martin Chalfie's seminar. In 2008, he was awarded the Nobel Prize in Chemistry.",
+      "link": "https://events.chaminade.edu/event/nobel_laureate_dr_martin_chalfie_seminar",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/cb0d015f-eea5-4e9c-97db-01df8f08c813.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Solving Mysteries Through Chemistry",
+      "intro": "Keiki have fun getting messy while learning about fingerprinting with the Forensics Science Club.",
+      "link": "https://www.chaminade.edu/article/having-messy-fun-chaminades-forensic-sciences-club",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/1f1615d3-88b0-48a7-be26-9afc0fee48ca.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Honoring the Marianist Bicentennial Icon",
+      "intro": "View the Icon when it's displayed here during its global pilgrimage.",
+      "link": "https://www.chaminade.edu/article/marianists-icon-be-displayed-mystical-rose-oratory-november-17-18",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/11be3a77-400e-4ebc-976c-f42194cc4123.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Inter-Faith Prayer Service",
+      "intro": "Celebrate all faiths and spiritual traditions.",
+      "link": "https://events.chaminade.edu/event/inter-faith_prayer_service",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4903c381-082d-401d-8df7-d87355e3a780.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Let There Be Light",
+      "intro": "Join the festivities as we turn on the Christmas lights of our campus.",
+      "link": "https://events.chaminade.edu/event/christmas_lighting_ceremony",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4ede006e-6a1d-4572-a169-6cbabf1c0dae.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Graduate Programs Open House",
+      "intro": "If you're thinking about continuing education, check out the graduate programs we offer.",
+      "link": "https://events.chaminade.edu/event/graduate_programs_open_house_4474",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/11ed194d-75cb-4aa6-9753-aa6a8f9dc660.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Blood Drive",
+      "intro": "Save up to three lives in just one hour.",
+      "link": "https://events.chaminade.edu/event/blood_drive_1116",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/fb42bed7-c457-41dc-ba8a-3e48319e2f38.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Maui Jim Maui Invitational",
+      "intro": "Cheer on our Men's Basketball team during this premier early season tournament. Go Swords!",
+      "link": "http://mauiinvitational.com/index.aspx",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg"
+    }
+  ]
+}

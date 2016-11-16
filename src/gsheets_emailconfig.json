@@ -1,0 +1,91 @@
+{
+  "template": {
+    "constituency": "employees",
+    "add_to_filename": "",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6d051d52-5ade-460a-8d59-791b5d6cbd15.jpg",
+    "masthead": "News for the Chaminade Ohana - November 2016 - Vol. 7"
+  },
+  "meta": {
+    "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
+    "og_twtr_url": "%%view_email_url%%",
+    "og_type_article_author": "Office of University Communications and Marketing",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "600",
+    "og_image_height": "350",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "twtr_card": "summary"
+  },
+  "content": [
+    {
+      "type": "hero",
+      "title": "Designing with a Purpose",
+      "intro": "ASID recognizes Environmental + Interior Design students for service-learning design projects.",
+      "link": "http://www.chaminade.edu/article/service-learning-designs-brought-accolades-eid-students",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/db0eb651-0a0f-4b30-a6ae-0acd016fa1c4.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Articulation Agreements Signed with Pacific University  ",
+      "intro": "Chaminade provides students with new career pathways for health professions.",
+      "link": "http://www.chaminade.edu/article/chaminade-university-partners-first-time-pacific-university-five-articulation-agreements",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/df4302ca-8066-4e05-b6f8-ee46e24892b2.jpg"
+    },
+    {
+      "type": "article",
+      "title": "A Night of Leadership Lessons and Networking",
+      "intro": "The Hogan Entrepreneurs Kick-Off gave students the opportunity to meet business leaders and learn about 'spiritual confidence.'",
+      "link": "http://www.chaminade.edu/article/annual-hogan-kick-event-general-ret-david-bramlett",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/ea060c63-e646-4d1d-9269-44229436ba03.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Looking Ahead",
+      "intro": "Exciting new changes for Maui Jim Maui Invitational beginning 2018.",
+      "link": "http://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg"
+    },
+    {
+      "type": "article",
+      "title": "#GivingTuesday",
+      "intro": "Help make a difference in the lives of our students. Your generosity contributes to their success.",
+      "link": "TBD",
+      "image": "#"
+    },
+    {
+      "type": "article",
+      "title": "\"Think Service, Think Chaminade\"",
+      "intro": "Check out our spot showcasing Chaminade alumni pursuing their passion and contributing to our community.",
+      "link": "https://www.youtube.com/watch?v=0DYH08z9rjo",
+      "image": "#"
+    },
+    {
+      "type": "article",
+      "title": "  'Tis the Season",
+      "intro": "Join us for our annual Christmas lighting ceremony on campus.",
+      "link": "https://events.chaminade.edu/event/christmas_lighting_ceremony#.WCPAI9UrK70",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4ede006e-6a1d-4572-a169-6cbabf1c0dae.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Maui Jim Maui Invitational",
+      "intro": "Don't miss any of the tournament action.  Go Swords!",
+      "link": "http://goswords.com/calendar.aspx",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg"
+    },
+    {
+      "type": "article",
+      "title": "A Step Towards the Future",
+      "intro": "The Hogan Entrepreneurs Program teaches veterans valuable job preparation skills.",
+      "link": "http://www.chaminade.edu/article/hogan-entrepreneurs-assist-veterans-job-skills",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/309e8cde-bd6f-4dd6-9549-b262b3b48838.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Honoring the Marianist Bicentennial Icon",
+      "intro": "View the Icon when it's displayed here during its global pilgrimage.",
+      "link": "http://www.chaminade.edu/article/marianists-icon-be-displayed-mystical-rose-oratory-november-17-18",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/11be3a77-400e-4ebc-976c-f42194cc4123.jpg"
+    }
+  ]
+}

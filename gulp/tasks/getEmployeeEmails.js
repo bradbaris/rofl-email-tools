@@ -30,7 +30,7 @@ const filename = "employee_emails_"+date+".csv";
  *    process.env.CUH_EMAIL_ENDPOINT 
  *    process.env.CUH_EMAIL_OAUTH
  **/
-module.exports = gulp.task('getEmails', function () {
+module.exports = gulp.task('getemails', function () {
 
   if(!process.env.CUH_EMAIL_ENDPOINT || !process.env.CUH_EMAIL_OAUTH) {
     throw new gutil.PluginError('getEmails', 'Missing API Parameters. Need to source the API URI and the OAUTH token.');

@@ -9,15 +9,36 @@ const fs           = require('fs'),
       inject       = require('gulp-inject-string'),
       detect_img   = require('request-image-size'),
       handlebars   = require('gulp-compile-handlebars'),
-      masthead     = require('./createMastheadString');
+      masthead     = require(path.join(config.paths.lib, 'masthead'));
 
   var data, template, distMasthead, distFilename;
+  var hero = {};
+
+
+handlebars.Handlebars.registerHelper('if_equals', function(a, b, opts) {
+  if(a === b) { return opts.fn(this); }
+  else { return opts.inverse(this); }
+});
+
+/**
+ * Used to locate an article type in an array of articles. i.e: 'Hero'
+ *
+ * Finds if value exists in object array and returns the object it's found in
+ * If value is not found, fallback to first object in array.
+ **/
+function retrieveValue(obj, value) {
+  if (Object.keys(obj).some( function(key){ obj[key] == value })) {
+    return obj.find( function(element){ return element.type == value});
+  } else {
+    return obj[0];
+  }
+}
 
 /**
  * Required tasks to ensure the build succeeds.
  * Heavily documented for convenience.
  **/
-module.exports = gulp.task('pre:build', function() {
+gulp.task('pre:build', function() {
 
   // Check for both params (--data and --template)
   if (!gutil.env.data && !gutil.env.template) {
@@ -50,17 +71,20 @@ module.exports = gulp.task('pre:build', function() {
     throw new gutil.PluginError('pre:build', 'Missing template Parameter. --template is a required field, needed to build email from.');
   }
 
-  // Detects hero image for opengraph image height  
+  // Detects hero image for opengraph image height
+  hero = retrieveValue(data.content, "Hero");
+
   let og_image = new Promise( function(resolve, reject) {
-    detect_img(data.hero.image, function(err, dimensions, length) {
+    detect_img(hero.image, function(err, dimensions, length) {
       if (err) { return reject(err) }
-      return resolve(dimensions.height.toString());
+      return resolve(dimensions);
     });
   }).then( function(result) {
-    data.meta.og_image_height = result;
+    data.meta.og_image_height = result.height.toString();
+    data.meta.og_image_width = result.width.toString();
 
     // Generate Masthead copy
-    data.template.masthead = masthead.createMastheadString(data.template.constituency, false, data.template.add_to_filename);
+    data.template.masthead = masthead(data.template.constituency, false, data.template.add_to_filename);
     
     // Check if nameplate_image specified, if not, then default to Alumni (Chaminade News).
     if(config.newsletterType[data.template.constituency].headerImg) {
@@ -72,11 +96,11 @@ module.exports = gulp.task('pre:build', function() {
     // If good, update JSON file with new values
     fs.writeFileSync(gutil.env.data, JSON.stringify(data, null, '  '));
   }).catch( function(err) {
-    throw new gutil.PluginError('pre:build', 'Ensure `data.hero.image` is valid. If this fails, build-generated data was not written to the data.json');
+    throw new gutil.PluginError('pre:build', 'Image file error. If this fails, build-generated data was not written to the data json file');
   });
 
   // Create final filename for HTML email
-  distFilename = masthead.createMastheadString(data.template.constituency, true, data.template.add_to_filename);
+  distFilename = masthead(data.template.constituency, true, data.template.add_to_filename);
 
   // Copy a copy into build for archival
   return gulp.src(gutil.env.data)
@@ -94,7 +118,7 @@ module.exports = gulp.task('pre:build', function() {
  * Inserts Litmus email tracking snippet
  * Inserts Salesforce email tracking snippet
  **/
-module.exports = gulp.task('build', ['pre:build'], function () {
+gulp.task('build', ['pre:build'], function () {
   return gulp.src(gutil.env.template)
     .pipe(handlebars(data, {batch:[path.join(config.paths.project,'templates/partials')]}))
     .pipe(mjml())
@@ -104,7 +128,7 @@ module.exports = gulp.task('build', ['pre:build'], function () {
       '<meta property="og:url" content="'+data.meta.og_twtr_url+'" />'+
       '<meta property="og:title" content="'+data.template.masthead+'" />'+
       '<meta property="og:description" content="'+data.meta.og_twtr_desc+'" />'+
-      '<meta property="og:image" content="'+data.hero.image+'" />'+
+      '<meta property="og:image" content="'+hero.image+'" />'+
       '<meta property="og:image:type" content="'+data.meta.og_image_type+'" />'+
       '<meta property="og:image:width" content="'+data.meta.og_image_width+'" />'+
       '<meta property="og:image:height" content="'+data.meta.og_image_height+'" />'+
@@ -115,10 +139,9 @@ module.exports = gulp.task('build', ['pre:build'], function () {
       '<meta name="og:twitter:title" content="'+data.template.masthead+'" />'+
       '<meta name="og:twitter:description" content="'+data.meta.og_twtr_desc+'" />'+
       '<meta name="og:twitter:url" content="'+data.meta.og_twtr_url+'" />'+
-      '<meta name="og:twitter:image" content="'+data.hero.image+'" />'))
+      '<meta name="og:twitter:image" content="'+hero.image+'" />'))
       // Add Litmus Tracking Snippet
-    .pipe(inject.before('</body>',
-      '<style data-ignore-inlining>@media print{ #_t { background-image: url(\'https://avasvbi8.emltrk.com/avasvbi8?p&d=%%emailaddr%%\');}} div.OutlookMessageHeader {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} table.moz-email-headers-table {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} blockquote #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} #MailContainerBody #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')}</style><div id="_t"></div><img src="https://avasvbi8.emltrk.com/avasvbi8?d=%%emailaddr%%" width="1" height="1" border="0" />'))
+    .pipe(inject.before('</body>','<style data-ignore-inlining>@media print{ #_t { background-image: url(\'https://avasvbi8.emltrk.com/avasvbi8?p&d=%%emailaddr%%\');}} div.OutlookMessageHeader {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} table.moz-email-headers-table {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} blockquote #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} #MailContainerBody #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')}</style><div id="_t"></div><img src="https://avasvbi8.emltrk.com/avasvbi8?d=%%emailaddr%%" width="1" height="1" border="0" />'))
       // Add Salesforce Tracking Snippet
     .pipe(inject.before('</body>','<custom name="opencounter" type="tracking">'))
     .pipe(rename(function (path) {
@@ -127,3 +150,8 @@ module.exports = gulp.task('build', ['pre:build'], function () {
       }))
     .pipe(gulp.dest(config.paths.build.index))
 });
+
+module.exports = {
+  'pre:build' : 'pre:build',
+  'build' : 'build'
+}

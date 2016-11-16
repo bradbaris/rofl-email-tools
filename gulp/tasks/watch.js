@@ -22,7 +22,7 @@ module.exports = gulp.task('watch', function() {
     });
 
     gulp.watch(config.paths.project + gutil.env.template, function() {
-      requireUncached(path.join(config.paths.project,util.env.template));
+      requireUncached(path.join(config.paths.project,gutil.env.template));
       sequence('default');
     });  
   }, 2000);

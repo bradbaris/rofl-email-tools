@@ -16,68 +16,48 @@
     "og_type": "article",
     "twtr_card": "summary"
   },
-  "hero": {
-    "title": "New Career Pathways for Students",
-    "intro": "Chaminade University and Pacific University partner to provide students with new opportunities to pursue careers in health professions…",
-    "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/8b7a5bd6-0419-4168-bde1-fa34bd77b87b.jpg",
-    "link": "https://www.chaminade.edu/article/chaminade-university-partners-first-time-pacific-university-five-articulation-agreements"
-  },
-  "articles": [
+  "content": [
     {
+      "type" : "hero",
+      "title": "New Career Pathways for Students",
+      "intro": "Chaminade University and Pacific University partner to provide students with new opportunities to pursue careers in health professions…",
+      "link": "https://www.chaminade.edu/article/chaminade-university-partners-first-time-pacific-university-five-articulation-agreements",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/8b7a5bd6-0419-4168-bde1-fa34bd77b87b.jpg"
+    },
+    { 
+      "type" : "article",
       "title": "Healthcare with Cultural Sensitivity",
       "intro": "School of Nursing students provided health screenings and wellness education while learning how to be sensitive to Native Hawaiian culture.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/59a6919b-c143-4d3f-8b99-25c0393905e6.jpg",
-      "link": "https://www.chaminade.edu/article/nursing-students-gain-cultural-competency-through-ho%E2%80%98okuikahi-i-pu%E2%80%98ukohola-cultural-event"
+      "link": "https://www.chaminade.edu/article/nursing-students-gain-cultural-competency-through-ho%E2%80%98okuikahi-i-pu%E2%80%98ukohola-cultural-event",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/59a6919b-c143-4d3f-8b99-25c0393905e6.jpg"
     },
     {
+      "type" : "article",
       "title": "A Night of Leadership Lessons and Networking",
       "intro": "The Hogan Entrepreneurs Kick-Off provided students the opportunity to meet business leaders and learn about 'spiritual confidence.'",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/ea060c63-e646-4d1d-9269-44229436ba03.jpg",
-      "link": "https://www.chaminade.edu/article/annual-hogan-kick-event-general-ret-david-bramlett"
+      "link": "https://www.chaminade.edu/article/annual-hogan-kick-event-general-ret-david-bramlett",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/ea060c63-e646-4d1d-9269-44229436ba03.jpg"
     },
     {
+      "type" : "article",
       "title": "The Show Goes On",
       "intro": "Showcasing their talents, the Pacific Islander Cultural clubs celebrated diversity through performances at the annual Pacific Island Review event.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/cdc7edd5-6823-42db-8f79-501174abc269.jpg",
-      "link": "https://www.chaminade.edu/article/pacific-island-review-celebrates-diversity"
+      "link": "https://www.chaminade.edu/article/pacific-island-review-celebrates-diversity",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/cdc7edd5-6823-42db-8f79-501174abc269.jpg"
     },
     {
+      "type" : "article",
       "title": "'All Things Marianist' Episodes 1 & 2",
       "intro": "As a way to highlight Marianists on campus, the Marianist Educational Associate are producing monthly videos to highlight Marianists at different levels.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg",
-      "link": "https://www.chaminade.edu/article/all-things-marianist-video-series-releases-its-first-episode"
+      "link": "https://www.chaminade.edu/article/all-things-marianist-video-series-releases-its-first-episode",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg"
     },
     {
+      "type" : "article",
       "title": "2018 Announcement",
       "intro": "Our premier early season basketball tournament features the strongest field in history.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg",
-      "link": "https://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history"
-    }
-  ],
-  "events": [
-    {
-      "title": "You're Invited",
-      "intro": "Please join the celebration as Clarence T. C. Ching Hall is dedicated.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4b67fd57-4285-446a-9870-20aaed6629e2.jpg",
-      "link": "https://www.chaminade.edu/article/chaminade-university-celebrates-dedication-clarence-t-c-ching-hall"
-    },
-    {
-      "title": "WIT",
-      "intro": "Chaminade Performing Arts presents Margaret Edson's Pulitzer prize winning play.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/10b80bc0-d027-4d05-880e-ee20006c2988.jpg",
-      "link": "https://events.chaminade.edu/event/wit_2850"
-    },
-    {
-      "title": "Inter-Faith Prayer Service",
-      "intro": "The gathering celebrates people from all faiths and spiritual traditions, giving thanks together. All are welcome. Lunch will be provided.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4903c381-082d-401d-8df7-d87355e3a780.jpg",
-      "link": "https://events.chaminade.edu/event/inter-faith_prayer_service"
-    },
-    {
-      "title": "Christmas Lighting Ceremony",
-      "intro": "What a great way to start the holiday season! All are welcome to the annual lighting of campus.  Meet at Clarence T. C. Ching Hall where the festivities begins.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/4ede006e-6a1d-4572-a169-6cbabf1c0dae.jpg",
-      "link": "https://events.chaminade.edu/event/christmas_lighting_ceremony"
+      "link": "https://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg"
     }
   ]
 }

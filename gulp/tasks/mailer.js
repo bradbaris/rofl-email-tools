@@ -1,14 +1,16 @@
 'use strict';
 
 const gulp     = require('gulp'),
-      mailer   = require('../../mailer');
+      path     = require('path'),
+      mailer   = require(path.join(config.paths.lib, 'mailer'));
  
 /**
  * Test Mailer
+ *
  * Asks you for GMail credentials (not saved), destination email, and template, 
  * then sends out an email via nodemailer.
  **/
 
-module.exports = gulp.task('sendTestEmail', function(callback) {
-  mailer('/build'), callback
+module.exports = gulp.task('sendtestemail', function(callback) {
+  mailer(config.paths.build.index), callback
 });

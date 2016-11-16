@@ -1,5 +1,6 @@
 const proj_folder  = process.cwd()+'/';
 const src_folder   = process.cwd()+'/src';
+const lib_folder   = process.cwd()+'/lib';
 const build_folder = process.cwd()+'/build';
 
 global.config = {
@@ -12,6 +13,7 @@ global.config = {
       index: build_folder,
       images: build_folder + '/images',
     },
+    lib: lib_folder,
     project: proj_folder
   },
   newsletterType: {

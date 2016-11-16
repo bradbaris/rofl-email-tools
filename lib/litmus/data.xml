@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<test_set>
+  <spam>1</spam>
+  <applications type="array">
+    {{APPS}}
+  </applications>
+  <save_defaults>false</save_defaults>
+  <use_defaults>false</use_defaults>
+  <email_source>
+     <body><![CDATA[ {{BODY}} ]]></body>
+     <subject>{{SUBJ}}</subject>
+  </email_source>
+</test_set>

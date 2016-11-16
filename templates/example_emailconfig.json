@@ -16,46 +16,44 @@
     "og_type": "article",
     "twtr_card": "summary"
   },
-  "hero": {
-    "title": "Placeholder Title for Hero Article",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "image": "http://image.S7.exacttarget.com/lib/fe9213727d65047e7d/m/1/c1c22541-054d-45de-9075-f456838fdac2.jpg",
-    "link": "https://www.chaminade.edu/"
-  },
-  "articles": [
+  "content": [
     {
+      "type": "hero",
+      "title": "Placeholder Title for Hero Article",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "http://image.S7.exacttarget.com/lib/fe9213727d65047e7d/m/1/c1c22541-054d-45de-9075-f456838fdac2.jpg",
+      "link": "https://www.chaminade.edu/"
+    },
+    {
+      "type": "article",
       "title": "Placeholder Title",
       "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
       "link": "https://www.chaminade.edu/"
     },
     {
+      "type": "article",
       "title": "Placeholder Title",
       "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
       "link": "https://www.chaminade.edu/"
     },
     {
+      "type": "article",
       "title": "Placeholder Title",
       "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
       "link": "https://www.chaminade.edu/"
     },
     {
-      "title": "Placeholder Title",
-      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
-      "link": "https://www.chaminade.edu/"
-    }
-  ],
-  "events": [
-    {
+      "type": "article",
       "title": "Placeholder Title",
       "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
       "link": "https://www.chaminade.edu/"
     },
     {
+      "type": "article",
       "title": "Placeholder Title",
       "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e0e16138-f57e-4638-9fb5-67a90489478b.jpg",
