@@ -34,7 +34,9 @@ This was made on and works on a Mac OSX. There are also several env variables ne
 ### • Compile Email  
 The `--data` and `--template` parameters are _REQUIRED_.
 
-_Read first: If you change the `template.constituency` in `emailconfig.json`, you should run it twice to ensure all fields properly changed. Also `template.nameplate_image` and `template.masthead` will be overwritten, as `template.constituency` generates it._  
+_Read first: If you change the `template.constituency` in `emailconfig.json`, you should run it twice to ensure all fields properly changed. Also `template.nameplate_image` and `template.masthead` will be overwritten, as `template.constituency` generates it._ 
+
+_Note:_ This build step clears the `/build` dir on run, so be wary when running it after other gulp commands.
 
   ```
   gulp --data {src/emailconfig.json} --template {templates/templateName.hbs}
