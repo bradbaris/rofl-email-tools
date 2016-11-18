@@ -1,5 +1,4 @@
 src/images/*
-!src/images/.gitkeep
 build/*
 !build/.gitkeep 
 litmus_tests/*

@@ -14,9 +14,10 @@
       <mj-class name="article-excerpt" align="left" font-family="Arial, sans-serif" font-weight="400" font-size="14px" line-height="28px" color="#047294" padding="0px" />
       <mj-class name="btn-read-more" align="right" vertical-align="middle" font-weight="400" font-size="10px" padding="20px 0px 0px 0px" font-family="Arial, sans-serif" text-decoration="none" border-radius="5px" inner-padding="7px 10px" background-color="#2196f3" color="#ffffff" />
       
-      <mj-class name="btn-fb" padding="0px 0px 30px 0px" font-weight="600" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#6385BE" />
-      <mj-class name="btn-tw" padding="0px 0px 30px 0px" font-weight="600" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#55ACE1" />
-      <mj-class name="btn-ftaf" padding="0px 0px 30px 0px" font-weight="600" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#59A650" />
+      <mj-class name="btn-fb" padding="0px 0px 30px 0px" font-weight="500" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#6385BE" />
+      <mj-class name="btn-tw" padding="0px 0px 30px 0px" font-weight="500" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#55ACE1" />
+      <mj-class name="btn-ftaf" padding="0px 0px 30px 0px" font-weight="500" font-size="12px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="5px" inner-padding="8px 10px" background-color="#59A650" />
+      <mj-class name="btn-give" padding="0px 0px 30px 0px" font-weight="500" font-size="18px" font-family="Arial, sans-serif" color="#ffffff" text-decoration="none" border-radius="50px" inner-padding="18px 42px" background-color="#094D92" />
 
       <mj-class name="divider" padding="0px 50px" border-width="2px" border-color="#ededed" border-style="solid" container-background-color="#ffffff">
     </mj-attributes>
@@ -58,16 +59,26 @@
       {{else}}
         {{> article}}
       {{/if}}
-      {{> divider}}
+      {{#unless @last}}
+        {{> divider}}
+      {{/unless}}
 
     {{/each}}
 
-      <mj-section vertical-align="middle" background-color="#ffffff" padding="40px 0px">
+      <mj-section vertical-align="middle" background-color="#ffffff" padding="20px 0px">
         <mj-column vertical-align="middle">
           <mj-text align="center" container-background-color="#ecf8ff" color="#047294" font-family="Arial, sans-serif" font-weight="400" font-size="14px" line-height="24px" padding="20px 40px">
             <a href="https://events.chaminade.edu" style="color:#047294; text-decoration:none;">For more campus events, please visit <b>https://events.chaminade.edu</b>
             </a>
           </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="#ffffff" padding="30px 50px">
+        <mj-column vertical-align="middle">
+          <mj-button mj-class="btn-give" container-background-color="#ffffff" href="https://www.chaminade.edu/office-institutional-advancement">
+            <span style="line-height:20px;">Donate to Chaminade today!</span>
+          </mj-button>
         </mj-column>
       </mj-section>
 
@@ -102,7 +113,7 @@
         </mj-image>
       </mj-section>
 
-      <mj-section vertical-align="middle" padding="0px 50px 0px" text-align="center" align="center" background-color="#0153A5">
+      <mj-section vertical-align="middle" padding="30px 50px 0px" text-align="center" align="center" background-color="#0153A5">
         <mj-text align="center" font-size="12px" color="#ffffff" text-decoration="none" padding="20px 0px 20px 0px">
           <p style="text-align:center;font-size:14px;">
             <a href="https://www.facebook.com/chaminadeuniversity" style="text-decoration:none;color:#ffffff;">Facebook</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;

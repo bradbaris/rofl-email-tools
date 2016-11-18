@@ -12,5 +12,5 @@ const gulp     = require('gulp'),
  **/
 
 module.exports = gulp.task('pulldata', function(callback) {
-  gsheets, callback
+  gsheets(), callback
 });
