@@ -18,5 +18,6 @@ tasks.forEach(function (task) {
  * (Refactor when Gulp 4.0 releases, with `gulp.series`)
  **/
 gulp.task('default', function(callback) {
-  sequence('clean', 'build', 'watch', callback);
+  sequence('clean', 'build', callback);
+  // sequence('clean', 'build', 'watch', callback);
 });

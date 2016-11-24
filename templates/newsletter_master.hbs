@@ -54,7 +54,9 @@
     {{#each content}}
       {{#if @first}}
         {{#if_equals this.type "hero"}}
-        {{> hero_article}}
+          {{> hero_article}}
+        {{else}}
+          {{> article}}
         {{/if_equals}}
       {{else}}
         {{> article}}
