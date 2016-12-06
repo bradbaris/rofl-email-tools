@@ -38,6 +38,12 @@ global.config = {
         interval   : "Monthly",
         headerImg  : "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg"
       },
+    ucm : 
+      {
+        headline   : "Official Announcement from Chaminade University",
+        originDate : "", // None
+        headerImg  : "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg"
+      },
     oop_memo : 
       {
         headline   : "From the Office of the President",

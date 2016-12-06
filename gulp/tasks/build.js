@@ -140,8 +140,12 @@ gulp.task('build', ['pre:build'], function () {
       '<meta name="og:twitter:description" content="'+data.meta.og_twtr_desc+'" />'+
       '<meta name="og:twitter:url" content="'+data.meta.og_twtr_url+'" />'+
       '<meta name="og:twitter:image" content="'+hero.image+'" />'))
-      // Add Litmus Tracking Snippet
-    .pipe(inject.before('</body>','<style data-ignore-inlining>@media print{ #_t { background-image: url(\'https://avasvbi8.emltrk.com/avasvbi8?p&d=%%emailaddr%%\');}} div.OutlookMessageHeader {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} table.moz-email-headers-table {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} blockquote #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')} #MailContainerBody #_t {background-image:url(\'https://avasvbi8.emltrk.com/avasvbi8?f&d=%%emailaddr%%\')}</style><div id="_t"></div><img src="https://avasvbi8.emltrk.com/avasvbi8?d=%%emailaddr%%" width="1" height="1" border="0" />'))
+      // **Litmus Tracking Snippet**
+      // This code needs to be refreshed every month if you want it to collect data accurately
+      // but this isn't a high priority at the moment, despite additional metrics.
+      // -- All you have to replace are all instances of the unique 8-char code:
+      //      i.e. --> [6jpwho0j].emltrk.com
+    .pipe(inject.before('</body>','<style data-ignore-inlining>@media print{ #_t { background-image: url(\'https://6jpwho0j.emltrk.com/6jpwho0j?p&d=%%emailaddr%%\');}} div.OutlookMessageHeader {background-image:url(\'https://6jpwho0j.emltrk.com/6jpwho0j?f&d=%%emailaddr%%\')} table.moz-email-headers-table {background-image:url(\'https://6jpwho0j.emltrk.com/6jpwho0j?f&d=%%emailaddr%%\')} blockquote #_t {background-image:url(\'https://6jpwho0j.emltrk.com/6jpwho0j?f&d=%%emailaddr%%\')} #MailContainerBody #_t {background-image:url(\'https://6jpwho0j.emltrk.com/6jpwho0j?f&d=%%emailaddr%%\')}</style><div id="_t"></div><img src="https://6jpwho0j.emltrk.com/6jpwho0j?d=%%emailaddr%%" width="1" height="1" border="0" />'))
       // Add Salesforce Tracking Snippet
     .pipe(inject.before('</body>','<custom name="opencounter" type="tracking">'))
     .pipe(rename(function (path) {

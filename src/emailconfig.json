@@ -1,63 +1,91 @@
 {
   "template": {
-    "constituency": "alumni",
-    "add_to_filename": "hawaii",
-    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
-    "masthead": "News for Alumni - November 2016 - Vol. 4"
+    "constituency": "employees",
+    "add_to_filename": "",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6d051d52-5ade-460a-8d59-791b5d6cbd15.jpg",
+    "masthead": "News for the Chaminade Ohana - November 2016 - Vol. 8"
   },
   "meta": {
     "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
     "og_twtr_url": "%%view_email_url%%",
     "og_type_article_author": "Office of University Communications and Marketing",
     "og_image_type": "image/jpeg",
-    "og_image_width": "600",
-    "og_image_height": "365",
+    "og_image_width": "235",
+    "og_image_height": "317",
     "og_locale": "en_US",
     "og_type": "article",
     "twtr_card": "summary"
   },
   "content": [
     {
-      "type" : "hero",
-      "title": "New Career Pathways for Students",
-      "intro": "Chaminade University and Pacific University partner to provide students with new opportunities to pursue careers in health professions…",
-      "link": "https://www.chaminade.edu/article/chaminade-university-partners-first-time-pacific-university-five-articulation-agreements",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/8b7a5bd6-0419-4168-bde1-fa34bd77b87b.jpg"
-    },
-    { 
-      "type" : "article",
-      "title": "Healthcare with Cultural Sensitivity",
-      "intro": "School of Nursing students provided health screenings and wellness education while learning how to be sensitive to Native Hawaiian culture.",
-      "link": "https://www.chaminade.edu/article/nursing-students-gain-cultural-competency-through-ho%E2%80%98okuikahi-i-pu%E2%80%98ukohola-cultural-event",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/59a6919b-c143-4d3f-8b99-25c0393905e6.jpg"
+      "type": "article",
+      "title": "Getting Down and Dirty",
+      "intro": "Education students get hands-on STEM experience with their Palolo Stream investigation.",
+      "link": "https://www.chaminade.edu/article/palolo-stream-investigation-whets-students-appetites-service-learning",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3a5580bd-62a1-4593-b47f-134f5b3e9353.jpg"
     },
     {
-      "type" : "article",
-      "title": "A Night of Leadership Lessons and Networking",
-      "intro": "The Hogan Entrepreneurs Kick-Off provided students the opportunity to meet business leaders and learn about 'spiritual confidence.'",
-      "link": "https://www.chaminade.edu/article/annual-hogan-kick-event-general-ret-david-bramlett",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/ea060c63-e646-4d1d-9269-44229436ba03.jpg"
+      "type": "article",
+      "title": "Pay it forward on #GivingTuesday",
+      "intro": "Help make a difference in the lives of our students. Your generosity contributes to their success.",
+      "link": "https://www.chaminade.edu/ia/giving-tuesday",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e248e899-c98d-4c96-87e6-ffaae3f26b2d.jpg"
     },
     {
-      "type" : "article",
-      "title": "The Show Goes On",
-      "intro": "Showcasing their talents, the Pacific Islander Cultural clubs celebrated diversity through performances at the annual Pacific Island Review event.",
-      "link": "https://www.chaminade.edu/article/pacific-island-review-celebrates-diversity",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/cdc7edd5-6823-42db-8f79-501174abc269.jpg"
+      "type": "article",
+      "title": "Lessons from an International Hotelier",
+      "intro": "Raymond Bickson talks to business students about the hotel industry and leadership.",
+      "link": "https://www.chaminade.edu/article/global-hospitality-expert-pays-chaminade-visit-0",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/0e890c14-023e-49a9-8ff1-744eaf7c496d.jpg"
     },
     {
-      "type" : "article",
-      "title": "'All Things Marianist' Episodes 1 & 2",
-      "intro": "As a way to highlight Marianists on campus, the Marianist Educational Associate are producing monthly videos to highlight Marianists at different levels.",
-      "link": "https://www.chaminade.edu/article/all-things-marianist-video-series-releases-its-first-episode",
+      "type": "article",
+      "title": "“Method to Music”",
+      "intro": "Educators and parents learn how to teach music to keiki.",
+      "link": "https://www.chaminade.edu/article/musician-and-montessori-educator-hits-high-notes-teachers",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/75471bc5-b56c-4ba2-b387-386fc975faa3.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Coming Full Circle",
+      "intro": "Generous donors meet their scholarship recipients at the annual scholarship luncheon. ",
+      "link": "https://www.chaminade.edu/article/early-thanksgiving-celebration-annual-scholarship-luncheon",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/bd8caf0b-7b5e-417a-9b4e-89409a418ec6.jpg"
+    },
+    {
+      "type": "article",
+      "title": "“Think Service, Think Chaminade”",
+      "intro": "Check out our spot showcasing Chaminade alumni pursuing their passion and contributing to our community.",
+      "link": "https://www.youtube.com/watch?v=0DYH08z9rjo",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6a8e8f58-a66e-463f-841f-fbc2f3027b8c.jpg"
+    },
+    {
+      "type": "article",
+      "title": "“All Things Marianist” Episode 3",
+      "intro": "Bro. Dennis Schmitz, SM, talks about ministering to incarcerated women and their children.",
+      "link": "https://youtu.be/P6zaSkJAkfs",
       "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg"
     },
     {
-      "type" : "article",
-      "title": "2018 Announcement",
-      "intro": "Our premier early season basketball tournament features the strongest field in history.",
-      "link": "https://www.chaminade.edu/article/2018-maui-jim-maui-invitational-features-strongest-field-history",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/79e5a23f-f5a7-4927-84c0-14853e7e4517.jpg"
+      "type": "article",
+      "title": "See You Tonight!",
+      "intro": "Join the festivities, as we illuminate the campus for the holidays.",
+      "link": "https://events.chaminade.edu/event/christmas_lighting_ceremony",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/208a6b7b-898f-4891-8746-51f0e256dbf9.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Christmas Off Campus",
+      "intro": "'Tis the season to volunteer. Help create a wonderful Christmas experience at the Next Step Shelter.",
+      "link": "https://events.chaminade.edu/event/christmas_off_campus_7629",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/dd7713a9-52a1-40bb-879a-0c98261aa09a.jpg"
+    },
+    {
+      "type": "article",
+      "title": "Immaculate Conception Mass",
+      "intro": "We invite you to celebrate with us.",
+      "link": "https://events.chaminade.edu/event/immaculate_conception_mass",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/f9f86855-fc26-4d66-babd-4a730059bfc4.jpg"
     }
   ]
 }

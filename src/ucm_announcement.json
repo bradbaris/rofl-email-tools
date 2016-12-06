@@ -1,0 +1,28 @@
+{
+  "template": {
+    "constituency": "ucm",
+    "add_to_filename": "announcement",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
+    "masthead": "Official Announcement from Chaminade University"
+  },
+  "meta": {
+    "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
+    "og_twtr_url": "%%view_email_url%%",
+    "og_type_article_author": "Office of University Communications and Marketing",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "600",
+    "og_image_height": "350",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "twtr_card": "summary"
+  },
+  "content": [
+    {
+      "type": "",
+      "title": "",
+      "intro": "",
+      "link": "",
+      "image": ""
+    }
+  ]
+}
