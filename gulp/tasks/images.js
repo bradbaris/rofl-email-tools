@@ -40,7 +40,7 @@ module.exports = gulp.task('images', function () {
       imageMagick: true
     }
 
-    return gulp.src(gutil.env.hero ?  gutil.env.hero : path.join(config.paths.src.images,'*.{jpg,png}'))
+    return gulp.src(gutil.env.hero ?  gutil.env.hero : path.join(config.paths.src.images,'*.{jpg,png,gif}'))
     .pipe(imageResize(options))
     .pipe(imagemin())
     .pipe(rename(function (path) { path.basename += '_'+options.width+'w' }))
