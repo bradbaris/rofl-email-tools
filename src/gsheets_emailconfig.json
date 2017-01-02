@@ -1,9 +1,9 @@
 {
   "template": {
-    "constituency": "alumni",
-    "add_to_filename": "mainland",
-    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d25f2a05-83f9-462e-9dcc-1051765db20e.jpg",
-    "masthead": "News for Alumni - December 2016 - Vol. 5"
+    "constituency": "employees",
+    "add_to_filename": "",
+    "nameplate_image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/6d051d52-5ade-460a-8d59-791b5d6cbd15.jpg",
+    "masthead": "News for the Chaminade Ohana - December 2016 - Vol. 10"
   },
   "meta": {
     "og_twtr_desc": "News and Events from the Chaminade Campus and Ohana.",
@@ -11,7 +11,7 @@
     "og_type_article_author": "Office of University Communications and Marketing",
     "og_image_type": "image/jpeg",
     "og_image_width": "235",
-    "og_image_height": "191",
+    "og_image_height": "211",
     "og_locale": "en_US",
     "og_type": "article",
     "twtr_card": "summary"
@@ -19,59 +19,59 @@
   "content": [
     {
       " ": "article",
-      "title": "A Step Towards the Future",
-      "intro": "The Hogan Entrepreneurs Program teaches veterans valuable job preparation skills.",
-      "link": "https://www.chaminade.edu/article/hogan-entrepreneurs-assist-veterans-job-skills",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/309e8cde-bd6f-4dd6-9549-b262b3b48838.jpg"
+      "title": "Good Circulation",
+      "intro": "School of Nursing's second annual mixer hosts community partners and offers seniors and alumni the opportunity to connect.",
+      "link": "https://www.chaminade.edu/article/school-nursing-alumni-return-network",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/21466422-72cf-422b-a4d5-2d04f6d80ac3.jpg"
     },
     {
       " ": "article",
-      "title": "Another Tournament in the Books",
-      "intro": "From a keiki hoops clinic to competing  against top ranked teams, it was an exciting five days.",
-      "link": "https://www.chaminade.edu/article/2016-maui-jim-maui-invitational-expanded-wrap",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/eb08e705-d144-4af5-a7bc-bc1cd3c1d3b6.jpg"
+      "title": "The World is Our Classroom",
+      "intro": "Hogan Entrepreneurs Program students travel to India and China for a taste of global business and culture.",
+      "link": "https://www.chaminade.edu/article/hogan-entrepreneurs-discover-asian-business-sense",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/25accf50-d67f-4085-9331-0fcfc3a72d66.jpg"
     },
     {
       " ": "article",
-      "title": "Coming Full Circle",
-      "intro": "Donors and scholarship recipients meet at annual mahalo luncheon. ",
-      "link": "https://www.chaminade.edu/article/early-thanksgiving-celebration-annual-scholarship-luncheon",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/bd8caf0b-7b5e-417a-9b4e-89409a418ec6.jpg"
+      "title": "If You Build It, They Will Come",
+      "intro": "The Environmental + Interior Design's Senior Portfolio Exhibit draws a crowd.",
+      "link": "https://www.chaminade.edu/article/portfolio-exhibit-celebrated-milestone-environmental-interior-design-seniors",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/d09cd371-7c74-4fbd-8fb5-58c905ebfe42.jpg"
     },
     {
       " ": "article",
-      "title": "Ching Hall Dedication",
-      "intro": "The heart of campus receives a facelift thanks to the Clarence T.C. Ching Foundation.",
-      "link": "https://www.chaminade.edu/article/chaminade-celebrates-clarence-t-c-ching-hall",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/c73bea63-4b78-47ee-b3e5-0a15f6ef7cd5.jpg"
+      "title": "Crocheting for a Cause",
+      "intro": "The Division of Humanities and Fine Arts weave compassion into coursework as students fabricate items for enlisted military families.",
+      "link": "https://www.chaminade.edu/article/chaminades-caring-crocheters-serve-military-families-hanks-skeins-and-balls-yarn",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/befc3992-004e-48fd-8d7d-24a6dff049c7.jpg"
     },
     {
       " ": "article",
-      "title": "Lessons from an International Hotelier",
-      "intro": "Raymond Bickson talks to business students about the hotel industry and leadership.",
-      "link": "https://www.chaminade.edu/article/global-hospitality-expert-pays-chaminade-visit-0",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/0284830b-1f87-4d4a-9f3a-716a3338a625.jpg"
+      "title": "The Results Are In!",
+      "intro": "Chaminade shines in key areas according to recent National Survey for Student Engagement (NSSE).",
+      "link": "https://www.chaminade.edu/article/2016-national-survey-student-engagement-recap",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/ce661204-30e0-4b70-bead-12333c13aef1.jpg"
     },
     {
       " ": "article",
-      "title": "Nobel Laureate Visits Chaminade",
-      "intro": "Dr. Chalfie talk met with oohs and ahhs as he explains his Nobel Prize winning GFP (Green Fluorescent Protein).",
-      "link": "https://www.chaminade.edu/article/nobel-laureate-chemistry-captivates-campus",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/19589d97-d72e-47c4-9554-5838d8de51e2.jpg"
+      "title": "“All Things Marianist” Episode 4",
+      "intro": "Bro. Thomas Jalbert, SM, shares the significance of our Marianist founders with Danny O'Regan.",
+      "link": "https://youtu.be/uh0v-lE1nJI",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/3f8c167b-993c-474b-af06-805a00bda387.jpg"
     },
     {
       " ": "article",
-      "title": "'Tis the Season of Giving",
-      "intro": "Your generosity helps students thrive and serve our community.",
-      "link": "https://www.chaminade.edu/office-institutional-advancement",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/e248e899-c98d-4c96-87e6-ffaae3f26b2d.jpg"
+      "title": "Stand (and Walk) Together",
+      "intro": "Sign up to participate in the Martin Luther King Jr. Parade and rally next month.",
+      "link": "https://events.chaminade.edu/event/the_martin_luther_king_jr_holiday_parade_and_unity_rally",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/138003fa-e0bf-4ce2-9792-5b1821212bee.jpg"
     },
     {
       " ": "article",
-      "title": "SAVE THE DATE",
-      "intro": "Time to plan ahead. Join us in Honolulu for Chaminade's 2017 Alumni Reunion on March 30 through April 2, 2017.",
-      "link": "https://www.chaminade.edu/alumni/alumni-reunion-2017",
-      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/b829d3d5-d9ae-453f-acaf-acdbb5276aa8.jpg"
+      "title": "Spend Your Saturday in Service",
+      "intro": "Register today for our university-wide Founders' Service Day project.",
+      "link": "https://cuhministry.com/founders/service-day/",
+      "image": "http://image.ucm-email.chaminade.edu/lib/fe9213727d65047e7d/m/1/da7eaff2-a168-4c6b-bcac-43447674857f.jpg"
     }
   ]
 }
